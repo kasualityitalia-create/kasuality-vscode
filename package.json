@@ -1,0 +1,123 @@
+{
+  "name": "kasuality-vscode",
+  "displayName": "Kasuality — Universal Color and K-UDA Design System",
+  "description": "Professional Color Science and Design System for VS Code and Cursor. Real-time OKLCH palettes, APCA and WCAG accessibility checker, bitematic K-UDA tokens, and AI context rules.",
+  "version": "1.0.1",
+  "publisher": "kasuality",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Other"
+  ],
+  "keywords": [
+    "color",
+    "palette",
+    "oklch",
+    "apca",
+    "wcag",
+    "k-uda",
+    "cursorrules",
+    "tailwind",
+    "design-tokens"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "icon": "media/icon.png",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "kasuality-activitybar",
+          "title": "Kasuality Design System",
+          "icon": "media/logo.svg"
+        }
+      ]
+    },
+    "views": {
+      "kasuality-activitybar": [
+        {
+          "type": "webview",
+          "id": "kasuality-sidebar",
+          "name": "Kasuality K-UDA and OKLCH",
+          "visibility": "visible"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "kasuality.openSidebar",
+        "title": "Kasuality: Apri Pannello Design System",
+        "category": "Kasuality"
+      },
+      {
+        "command": "kasuality.insertTokensCss",
+        "title": "Kasuality: Inserisci Token CSS K-UDA (Self-Healing)",
+        "category": "Kasuality"
+      },
+      {
+        "command": "kasuality.insertTokensJson",
+        "title": "Kasuality: Copia Token W3C DTCG JSON",
+        "category": "Kasuality"
+      },
+      {
+        "command": "kasuality.injectCursorRules",
+        "title": "Kasuality: Inietta Regole Cursor AI (.cursorrules)",
+        "category": "Kasuality"
+      },
+      {
+        "command": "kasuality.checkContrast",
+        "title": "Kasuality: Ispeziona Contrasto e Spazio OKLCH",
+        "category": "Kasuality"
+      }
+    ],
+    "configuration": {
+      "title": "Kasuality Design System",
+      "properties": {
+        "kasuality.defaultFormat": {
+          "type": "string",
+          "enum": [
+            "oklch",
+            "hex",
+            "rgb"
+          ],
+          "default": "oklch",
+          "description": "Formato predefinito per i token cromatici (OKLCH, HEX o RGB)."
+        },
+        "kasuality.language": {
+          "type": "string",
+          "enum": [
+            "it",
+            "en",
+            "es",
+            "fr",
+            "de"
+          ],
+          "default": "it",
+          "description": "Lingua dell'interfaccia dell'estensione Kasuality."
+        },
+        "kasuality.teamLicenseKey": {
+          "type": "string",
+          "default": "",
+          "description": "Chiave licenza del Team Kasuality per la sincronizzazione cloud in tempo reale."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "node -e \"console.log('Kasuality Extension ready')\""
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kasuality/kasuality-vscode"
+  },
+  "homepage": "https://www.kasuality.com"
+}
