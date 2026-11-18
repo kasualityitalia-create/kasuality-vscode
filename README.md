@@ -1,13 +1,15 @@
 # Kasuality OS • Universal Color and K-UDA Design System
 ### Official Extension for Visual Studio Code and Cursor IDE
 
-[![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://www.kasuality.com)
+[![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)](https://www.kasuality.com)
 [![OKLCH](https://img.shields.io/badge/Color_Space-OKLCH_Wide--Gamut-06B6D4.svg)](https://www.kasuality.com)
 [![APCA](https://img.shields.io/badge/Accessibility-APCA_W3C_Ready-10B981.svg)](https://www.kasuality.com)
 [![K-UDA](https://img.shields.io/badge/Architecture-K--UDA_Self--Healing-8B5CF6.svg)](https://www.kasuality.com/kuda/)
 [![Languages](https://img.shields.io/badge/Languages-IT_%7C_EN_%7C_ES_%7C_FR_%7C_DE-F43F5E.svg)](https://www.kasuality.com)
 
 **Kasuality** bridges the gap between digital design and modern front-end engineering. Developed for web developers, UI/UX engineers, and AI-driven workflows (Cursor and Windsurf), Kasuality brings **perceptual color science (OKLCH)**, **predictive contrast algorithms (APCA and WCAG)**, and **bitematic Self-Healing tokens (K-UDA)** directly inside your coding editor.
+
+![Kasuality VS Code Extension Preview](preview.png)
 
 ---
 
